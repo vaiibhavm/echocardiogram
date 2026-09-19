@@ -1,0 +1,7 @@
+model,seed,view,phase,class,dice_mean,dice_std,iou_mean,hd95_mean_mm,asd_mean_mm,precision_mean,recall_mean
+B0,2026,2CH,ED,LVendo,,,,,,,
+B0,2026,2CH,ES,LVendo,,,,,,,
+A1,2026,2CH,ED,LVendo,,,,,,,
+A2,2026,2CH,ED,LVendo,,,,,,,
+A3,2026,2CH,ED,LVendo,,,,,,,
+Proposed,2026,2CH,ED,LVendo,,,,,,,

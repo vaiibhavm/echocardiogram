@@ -1,0 +1,8 @@
+tensorflow>=2.10
+numpy
+matplotlib
+scipy
+scikit-image
+nibabel
+pandas
+opencv-python

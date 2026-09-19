@@ -1,0 +1,58 @@
+experiment:
+  name: future_multiclass_boundary_functional_pix2pix
+  seed: 2026
+  deterministic: true
+
+data:
+  root: /path/to/CAMUS_public
+  nifti_dir: database_nifti
+  split_dir: database_split
+  train_split_file: subgroup_training.txt
+  val_split_file: subgroup_validation.txt
+  test_split_file: subgroup_testing.txt
+  val_fraction: 0.15
+  views: [2CH, 4CH]
+  phases: [ED, ES]
+  task: multiclass
+  structure: LVendo
+  paired_phases: true
+  image_size: [256, 256]
+  augment: true
+  augmentation:
+    horizontal_flip_prob: 0.5
+    rotation_deg: 10
+    brightness: 0.08
+    contrast: 0.08
+    percentile_normalization: true
+model:
+  base_channels: 64
+  num_classes: 4
+loss:
+  region_weight: 1.0
+  ce_weight: 1.0
+  dice_weight: 1.0
+  pixel_l1_weight: 10.0
+  adversarial_weight: 0.5
+  boundary_weight: 1.0
+  functional_weight: 2.0
+  boundary_tolerance_px: 2
+  lv_class: 1
+  physiology_weight: 0.25
+training:
+  epochs: 250
+  batch_size: 1
+  eval_batch_size: 4
+  num_workers: 4
+  lr_g: 0.0002
+  lr_d: 0.0001
+  betas: [0.5, 0.999]
+  amp: true
+  grad_clip: 5.0
+  label_smoothing: 0.05
+  label_flip_prob: 0.0
+  d_update_min_loss: -1.0
+  lr_patience: 12
+  lr_factor: 0.5
+  min_lr: 0.000001
+  early_stopping_patience: 35
+  early_stopping_min_delta: 0.0001

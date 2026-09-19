@@ -1,0 +1,18 @@
+name: echo-research
+channels: [pytorch, nvidia, conda-forge]
+dependencies:
+  - python=3.11
+  - pytorch>=2.2
+  - torchvision
+  - pytorch-cuda=12.1
+  - numpy
+  - scipy
+  - pandas
+  - nibabel
+  - scikit-image
+  - opencv
+  - pyyaml
+  - matplotlib
+  - tqdm
+  - pytest
+  - pip

@@ -1,0 +1,6 @@
+model,adversarial,l1,region_dice,boundary,functional,dice,hd95,ef_mae,params_m,inference_ms
+B0,1,1,0,0,0,,,,,
+A1,1,1,1,0,0,,,,,
+A2,1,1,1,1,0,,,,,
+A3,1,1,1,0,1,,,,,
+Proposed,1,1,1,1,1,,,,,

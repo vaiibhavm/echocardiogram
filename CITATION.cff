@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: Echo Research Paper Kit
+message: "If you use this research code, cite the final paper and the CAMUS dataset paper."
+type: software
+version: 0.1.0
+date-released: 2026-08-11
+license: MIT
+references:
+  - type: article
+    title: "Automatic Segmentation of 2-D Echocardiography Ultrasound Images by Means of Generative Adversarial Network"
+    year: 2024
+    doi: "10.1109/TUFFC.2024.3393026"
+  - type: article
+    title: "Deep Learning for Segmentation using an Open Large-Scale Dataset in 2D Echocardiography"
+    year: 2019
+    doi: "10.1109/TMI.2019.2900516"

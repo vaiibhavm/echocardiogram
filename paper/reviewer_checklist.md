@@ -1,0 +1,21 @@
+# Pre-Submission Reviewer Checklist
+
+- [ ] Is the target IEEE journal/conference scope appropriate?
+- [ ] Is the research question clear?
+- [ ] Is novelty refreshed against 2025–2026 literature?
+- [ ] Are all reused ideas and datasets cited?
+- [ ] Are train/val/test patients disjoint?
+- [ ] Was test untouched until final evaluation?
+- [ ] Are all model-selection decisions documented?
+- [ ] Are results from multiple seeds?
+- [ ] Are mean, SD, and confidence intervals reported?
+- [ ] Is the strongest baseline reasonably current?
+- [ ] Are boundary metrics reported, not only Dice?
+- [ ] Is clinical volume computation validated?
+- [ ] Are failure cases shown?
+- [ ] Is robustness evaluated?
+- [ ] Are parameter count and inference cost reported?
+- [ ] Can another researcher reproduce the experiment from the repository?
+- [ ] Are limitations stated without marketing language?
+- [ ] Are authorship and data-use agreements satisfied?
+- [ ] Do all authors have ORCID if required by the target IEEE journal?

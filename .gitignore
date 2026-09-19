@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+runs/
+outputs/
+data/
+*.pt
+*.pth
+*.h5
+*.keras
+*.nii
+*.nii.gz
+*.avi
+*.mp4
+.DS_Store
+
+# Ignored files
+references/*.pdf
+train online.md
+paste_in_kaggle_cell.txt
+legacy/*_project_context.md

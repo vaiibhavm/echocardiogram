@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echo-research-paper-kit"
+version = "0.1.0"
+description = "Reproducible Pix2Pix-based echocardiography segmentation research framework"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2", "torchvision>=0.17", "numpy>=1.26", "scipy>=1.11",
+  "pandas>=2.0", "nibabel>=5.2", "scikit-image>=0.22",
+  "opencv-python-headless>=4.8", "PyYAML>=6.0", "matplotlib>=3.8", "tqdm>=4.66"
+]
+
+[tool.setuptools.packages.find]
+include = ["echo_research*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

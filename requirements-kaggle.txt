@@ -1,0 +1,4 @@
+# Kaggle usually already provides torch/numpy/scipy/pandas/opencv.
+# Install only the packages commonly missing or version-sensitive.
+nibabel>=5.2
+PyYAML>=6.0
